@@ -11042,7 +11042,7 @@ Expecting ` + U.join(", ") + ", got '" + (this.terminals_[H] || H) + "'" : X = "
             const i = `maplibregl-legend-onlyrendered-checkbox-${Math.random()*100}`;
             n.setAttribute("id", i), n.classList.add("maplibregl-legend-onlyRendered-checkbox"), n.checked = this.onlyRendered, n.addEventListener("click", this.handleClickOnlyRendered.bind(this)), this.legendContainer.appendChild(n);
             const o = document.createElement("label");
-            o.classList.add("maplibregl-legend-onlyRendered-label"), o.textContent = "Only rendered", o.htmlFor = i, this.legendContainer.appendChild(o), this.legendContainer.appendChild(document.createElement("br")), this.map.on("moveend", () => {
+            o.classList.add("maplibregl-legend-onlyRendered-label"), o.textContent = "Только видимые", o.htmlFor = i, this.legendContainer.appendChild(o), this.legendContainer.appendChild(document.createElement("br")), this.map.on("moveend", () => {
                 this.updateLegendControl()
             }), this.map.on("styledata", () => {
                 this.updateLegendControl()
